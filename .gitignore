@@ -3,3 +3,5 @@ Release
 Debug
 
 leopard Debug.launch
+
+leopard Release.launch
