@@ -247,7 +247,7 @@ Reset\n
 Text Notes 11650 13100 0    79   ~ 0
 8MHz Oscillator
 Text Notes 15550 13100 0    79   ~ 0
-32.768MHz Oscillator
+32.768KHz Oscillator
 $Comp
 L Device:R R3
 U 1 1 5E1168ED
@@ -354,9 +354,9 @@ Text Label 11300 12850 0    50   ~ 0
 OSC_8MHz_OUT
 Text Label 11300 12250 0    50   ~ 0
 OSC_8MHz_IN
-Text Label 10400 5800 2    79   ~ 0
+Text Label 10400 5800 2    50   ~ 0
 OSC_32.768KHz_IN
-Text Label 10400 5700 2    79   ~ 0
+Text Label 10400 5700 2    50   ~ 0
 OSC_32.768KHz_OUT
 Wire Wire Line
 	12200 12850 11300 12850
