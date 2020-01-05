@@ -1,4 +1,4 @@
-update=2020/1/3 16:12:54
+update=2020/1/5 15:58:01
 version=1
 last_client=kicad
 [general]
@@ -34,10 +34,10 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=C:/Users/hank/Desktop/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
 SpiceAjustPassiveValues=0
-LabSize=50
+LabSize=79
 ERC_TestSimilarLabels=1
