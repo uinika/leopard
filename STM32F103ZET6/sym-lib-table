@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name 74HC1G66GW_125)(type Legacy)(uri C:/Users/zhenghang/Desktop/74HC1G66GW,125/KiCad/74HC1G66GW_125.lib)(options "")(descr ""))
+  (lib (name New_Library)(type Legacy)(uri ${KIPRJMOD}/New_Library.lib)(options "")(descr ""))
+)
