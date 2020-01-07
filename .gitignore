@@ -6,7 +6,6 @@ leopard Debug.launch
 
 leopard Release.launch
 
-STM32F103ZET6/*.lib
 STM32F103ZET6/*.sch-bak
 STM32F103ZET6/*.kicad_pcb-bak
 STM32F103ZET6/fp-info-cache
