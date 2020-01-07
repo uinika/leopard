@@ -2,7 +2,6 @@ EESchema-DOCLIB  Version 2.0
 #
 $CMP 74HC1G66GW,125
 D 74HC(T)1G66 - Single-pole single-throw analog switch@en-us
-K
 F https://assets.nexperia.com/documents/data-sheet/74HC_HCT1G66.pdf
 $ENDCMP
 #
