@@ -364,17 +364,6 @@ Wire Wire Line
 Wire Wire Line
 	7800 5400 7350 5400
 $Comp
-L MCU_ST_STM32F1:STM32F103ZETx U1
-U 1 1 5E10DDFE
-P 12100 8150
-F 0 "U1" H 11200 4600 50  0000 R CNN
-F 1 "STM32F103ZET6" V 10850 10500 50  0000 R CNN
-F 2 "Package_QFP:LQFP-144_20x20mm_P0.5mm" H 11000 4750 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00191185.pdf" H 12100 8150 50  0001 C CNN
-	1    12100 8150
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR0101
 U 1 1 5E21A2E6
 P 4400 2800
@@ -2379,12 +2368,12 @@ DS18B20
 $Comp
 L Memory_Flash:W25Q32JVSS U7
 U 1 1 5E1701C2
-P 19550 10300
-F 0 "U7" H 19550 10881 50  0000 C CNN
-F 1 "W25Q32JVSS" H 19550 10790 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 19550 10300 50  0001 C CNN
-F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 19550 10300 50  0001 C CNN
-	1    19550 10300
+P 6150 8950
+F 0 "U7" H 6150 9531 50  0000 C CNN
+F 1 "W25Q32JVSS" H 6150 9440 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 6150 8950 50  0001 C CNN
+F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 6150 8950 50  0001 C CNN
+	1    6150 8950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2401,12 +2390,12 @@ $EndComp
 $Comp
 L MCU_Espressif:ESP8266EX U6
 U 1 1 5E178D3D
-P 19600 7450
-F 0 "U6" H 19600 6261 50  0000 C CNN
-F 1 "ESP8266EX" H 19600 6170 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm" H 19600 6150 50  0001 C CNN
-F 3 "http://espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf" H 19700 6150 50  0001 C CNN
-	1    19600 7450
+P 19500 7750
+F 0 "U6" H 19500 6561 50  0000 C CNN
+F 1 "ESP8266EX" H 19500 6470 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm" H 19500 6450 50  0001 C CNN
+F 3 "http://espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf" H 19600 6450 50  0001 C CNN
+	1    19500 7750
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -2516,106 +2505,102 @@ PC11
 $Comp
 L Connector:Micro_SD_Card J7
 U 1 1 5E488211
-P 5950 7100
-F 0 "J7" H 5900 6283 50  0000 C CNN
-F 1 "Micro_SD_Card" H 5900 6374 50  0000 C CNN
-F 2 "" H 7100 7400 50  0001 C CNN
-F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 5950 7100 50  0001 C CNN
-	1    5950 7100
+P 5950 7050
+F 0 "J7" H 5900 6233 50  0000 C CNN
+F 1 "Micro_SD_Card" H 5900 6324 50  0000 C CNN
+F 2 "" H 7100 7350 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 5950 7050 50  0001 C CNN
+	1    5950 7050
 	-1   0    0    1   
 $EndComp
-Text Label 7050 6800 0    50   ~ 0
+Text Label 7050 6750 0    50   ~ 0
 PB14
 Wire Wire Line
-	6850 6800 7050 6800
-Text Label 7050 7000 0    50   ~ 0
+	6850 6750 7050 6750
+Text Label 7050 6950 0    50   ~ 0
 PB13
 Wire Wire Line
-	7050 7000 6850 7000
-Text Label 7050 7300 0    50   ~ 0
+	7050 6950 6850 6950
+Text Label 7050 7250 0    50   ~ 0
 PD2
 Wire Wire Line
-	7050 7300 6850 7300
-Text Label 7050 7200 0    50   ~ 0
+	7050 7250 6850 7250
+Text Label 7050 7150 0    50   ~ 0
 PB15
 Wire Wire Line
-	6850 7200 7050 7200
+	6850 7150 7050 7150
 Wire Wire Line
-	7550 7050 7550 7100
+	7550 7000 7550 7050
 Wire Wire Line
-	7350 6900 7350 6650
-Connection ~ 7550 7100
+	7350 6850 7350 6600
+Connection ~ 7550 7050
 Wire Wire Line
-	7550 7100 7700 7100
-Text Label 7700 7100 0    50   ~ 0
+	7550 7050 7700 7050
+Text Label 7700 7050 0    50   ~ 0
 VCC_3V3
 $Comp
 L Device:C C34
 U 1 1 5E48822F
-P 7550 6900
-F 0 "C34" H 7665 6946 50  0000 L CNN
-F 1 "104" H 7665 6855 50  0000 L CNN
-F 2 "" H 7588 6750 50  0001 C CNN
-F 3 "~" H 7550 6900 50  0001 C CNN
-	1    7550 6900
+P 7550 6850
+F 0 "C34" H 7665 6896 50  0000 L CNN
+F 1 "104" H 7665 6805 50  0000 L CNN
+F 2 "" H 7588 6700 50  0001 C CNN
+F 3 "~" H 7550 6850 50  0001 C CNN
+	1    7550 6850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR023
 U 1 1 5E488235
-P 7650 6650
-F 0 "#PWR023" H 7650 6400 50  0001 C CNN
-F 1 "GND" V 7655 6522 50  0000 R CNN
-F 2 "" H 7650 6650 50  0001 C CNN
-F 3 "" H 7650 6650 50  0001 C CNN
-	1    7650 6650
+P 7650 6600
+F 0 "#PWR023" H 7650 6350 50  0001 C CNN
+F 1 "GND" V 7655 6472 50  0000 R CNN
+F 2 "" H 7650 6600 50  0001 C CNN
+F 3 "" H 7650 6600 50  0001 C CNN
+	1    7650 6600
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7550 6750 7550 6650
-Connection ~ 7550 6650
+	7550 6700 7550 6600
+Connection ~ 7550 6600
 Wire Wire Line
-	7550 6650 7650 6650
+	7550 6600 7650 6600
 Wire Wire Line
-	6850 7100 7550 7100
+	6850 7050 7550 7050
 Wire Wire Line
-	7350 6650 7550 6650
+	7350 6600 7550 6600
 Wire Wire Line
-	6850 6900 7350 6900
-Text Label 4600 6500 2    50   ~ 0
+	6850 6850 7350 6850
+Text Label 4600 6450 2    50   ~ 0
 VCC_3V3
 Wire Wire Line
-	4600 6500 4650 6500
+	4600 6450 4650 6450
 $Comp
 L Device:R R20
 U 1 1 5E4BD4E4
-P 4800 6500
-F 0 "R20" V 4593 6500 50  0000 C CNN
-F 1 "5.1m" V 4684 6500 50  0000 C CNN
-F 2 "" V 4730 6500 50  0001 C CNN
-F 3 "~" H 4800 6500 50  0001 C CNN
-	1    4800 6500
+P 4800 6450
+F 0 "R20" V 4593 6450 50  0000 C CNN
+F 1 "5.1m" V 4684 6450 50  0000 C CNN
+F 2 "" V 4730 6450 50  0001 C CNN
+F 3 "~" H 4800 6450 50  0001 C CNN
+	1    4800 6450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4950 6500 5000 6500
+	4950 6450 5000 6450
 Wire Wire Line
-	5000 6900 4750 6900
+	5000 6850 4750 6850
 Wire Wire Line
-	5000 6500 5000 6900
-Text Label 4750 6900 2    50   ~ 0
+	5000 6450 5000 6850
+Text Label 4750 6850 2    50   ~ 0
 PA1
-NoConn ~ 6850 6700
-NoConn ~ 6850 7400
-Wire Notes Line
-	8200 6000 8200 8000
+NoConn ~ 6850 6650
+NoConn ~ 6850 7350
 Wire Notes Line
 	8200 8000 500  8000
-Wire Notes Line
-	4100 6000 4100 8000
-Connection ~ 5000 6500
+Connection ~ 5000 6450
 Wire Wire Line
-	5000 6500 5150 6500
+	5000 6450 5150 6450
 Text Label 11900 6850 1    50   ~ 0
 PB14
 Text Label 11800 6850 1    50   ~ 0
@@ -2626,6 +2611,180 @@ Text Notes 3400 7850 0    79   ~ 0
 SD(SDIO)\n
 Text Notes 6650 8000 0    79   ~ 0
 SD(SPI) / Touch Button\n\n
+$Comp
+L Memory_EEPROM:M24C02-WDW U9
+U 1 1 5E7B0589
+P 1800 9050
+F 0 "U9" H 2050 9300 50  0000 C CNN
+F 1 "M24C02-WDW" H 1450 9300 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 1800 9400 50  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/b0/d8/50/40/5a/85/49/6f/DM00071904.pdf/files/DM00071904.pdf/jcr:content/translations/en.DM00071904.pdf" H 1850 8550 50  0001 C CNN
+	1    1800 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 9350 1800 9400
+Wire Wire Line
+	1800 9400 1350 9400
+Wire Wire Line
+	1350 8950 1350 9050
+Connection ~ 1350 9400
+Wire Wire Line
+	1350 9400 1300 9400
+Wire Wire Line
+	1400 8950 1350 8950
+Wire Wire Line
+	1400 9050 1350 9050
+Connection ~ 1350 9050
+Wire Wire Line
+	1350 9050 1350 9150
+Wire Wire Line
+	1400 9150 1350 9150
+Connection ~ 1350 9150
+Wire Wire Line
+	1350 9150 1350 9400
+$Comp
+L power:GND #PWR024
+U 1 1 5E83C46B
+P 1300 9400
+F 0 "#PWR024" H 1300 9150 50  0001 C CNN
+F 1 "GND" V 1305 9272 50  0000 R CNN
+F 2 "" H 1300 9400 50  0001 C CNN
+F 3 "" H 1300 9400 50  0001 C CNN
+	1    1300 9400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 9150 2200 9300
+$Comp
+L power:GND #PWR025
+U 1 1 5E859232
+P 2200 9300
+F 0 "#PWR025" H 2200 9050 50  0001 C CNN
+F 1 "GND" H 2205 9127 50  0000 C CNN
+F 2 "" H 2200 9300 50  0001 C CNN
+F 3 "" H 2200 9300 50  0001 C CNN
+	1    2200 9300
+	1    0    0    -1  
+$EndComp
+Text Label 2700 8950 0    50   ~ 0
+PB11
+Text Label 2700 9050 0    50   ~ 0
+PB10
+$Comp
+L Device:R R21
+U 1 1 5E89365A
+P 2300 8750
+F 0 "R21" H 2370 8796 50  0000 L CNN
+F 1 "10k" H 2370 8705 50  0000 L CNN
+F 2 "" V 2230 8750 50  0001 C CNN
+F 3 "~" H 2300 8750 50  0001 C CNN
+	1    2300 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 8950 2300 8950
+Wire Wire Line
+	2200 9050 2550 9050
+Wire Wire Line
+	2300 8900 2300 8950
+Connection ~ 2300 8950
+Wire Wire Line
+	2300 8950 2700 8950
+$Comp
+L Device:R R22
+U 1 1 5E91E5D2
+P 2550 8750
+F 0 "R22" H 2620 8796 50  0000 L CNN
+F 1 "10k" H 2620 8705 50  0000 L CNN
+F 2 "" V 2480 8750 50  0001 C CNN
+F 3 "~" H 2550 8750 50  0001 C CNN
+	1    2550 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 8900 2550 9050
+Connection ~ 2550 9050
+Wire Wire Line
+	2550 9050 2700 9050
+Wire Wire Line
+	1800 8750 1800 8550
+Wire Wire Line
+	1800 8550 2300 8550
+Wire Wire Line
+	2300 8600 2300 8550
+Connection ~ 2300 8550
+Wire Wire Line
+	2300 8550 2550 8550
+Wire Wire Line
+	2550 8600 2550 8550
+Connection ~ 2550 8550
+$Comp
+L Device:C C35
+U 1 1 5E9AFB38
+P 2850 8550
+F 0 "C35" V 2598 8550 50  0000 C CNN
+F 1 "104" V 2689 8550 50  0000 C CNN
+F 2 "" H 2888 8400 50  0001 C CNN
+F 3 "~" H 2850 8550 50  0001 C CNN
+	1    2850 8550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 5E9CE8D1
+P 3050 8550
+F 0 "#PWR026" H 3050 8300 50  0001 C CNN
+F 1 "GND" V 3055 8422 50  0000 R CNN
+F 2 "" H 3050 8550 50  0001 C CNN
+F 3 "" H 3050 8550 50  0001 C CNN
+	1    3050 8550
+	0    -1   -1   0   
+$EndComp
+Text Label 2650 8350 2    50   ~ 0
+VCC_3V3
+Wire Wire Line
+	2550 8550 2650 8550
+Wire Wire Line
+	2650 8350 2650 8550
+Connection ~ 2650 8550
+Wire Wire Line
+	2650 8550 2700 8550
+Text Label 11500 6850 1    50   ~ 0
+PB10
+Text Label 11600 6850 1    50   ~ 0
+PB11
+Wire Notes Line
+	4100 6000 4100 9800
+Text Notes 3400 9600 0    79   ~ 0
+EEPROM\n
+Wire Notes Line
+	8200 6000 8200 9800
+Wire Notes Line
+	500  9800 8200 9800
+Text Notes 7350 9600 0    79   ~ 0
+SPI Flash
+$Comp
+L MCU_ST_STM32F1:STM32F103ZETx U1
+U 1 1 5E10DDFE
+P 12100 8150
+F 0 "U1" H 11200 4600 50  0000 R CNN
+F 1 "STM32F103ZET6" V 10850 10500 50  0000 R CNN
+F 2 "Package_QFP:LQFP-144_20x20mm_P0.5mm" H 11000 4750 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00191185.pdf" H 12100 8150 50  0001 C CNN
+	1    12100 8150
+	0    -1   -1   0   
+$EndComp
+Text Notes 22300 9450 0    79   ~ 0
+WIFI
+Text Notes 22300 5750 0    79   ~ 0
+2.4G\n
+Wire Notes Line
+	16000 9800 22900 9800
+Wire Wire Line
+	3000 8550 3050 8550
+Wire Notes Line
+	16000 6000 16000 9800
 Wire Bus Line
 	3600 800  3600 2000
 Wire Bus Line

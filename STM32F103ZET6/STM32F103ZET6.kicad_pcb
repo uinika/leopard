@@ -60,7 +60,8 @@
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
-    (visible_elements FFFFFF7F)
+    (grid_origin 152.4 101.727)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
@@ -390,7 +391,7 @@
   )
 
   (module Package_QFP:LQFP-144_20x20mm_P0.5mm (layer F.Cu) (tedit 5D9F72B0) (tstamp 5E0CC18C)
-    (at 146.05 100.33)
+    (at 152.146 101.981)
     (descr "LQFP, 144 Pin (http://ww1.microchip.com/downloads/en/PackagingSpec/00000049BQ.pdf#page=425), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "LQFP QFP")
     (path /5E0CBF09)
