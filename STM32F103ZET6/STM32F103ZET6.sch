@@ -2224,8 +2224,6 @@ Wire Wire Line
 	17350 5500 17450 5500
 Wire Notes Line
 	18500 500  18500 6000
-Wire Notes Line
-	500  6000 18500 6000
 Text Notes 17950 5900 0    79   ~ 0
 Button\n
 $Comp
@@ -2372,6 +2370,262 @@ Wire Wire Line
 	22500 3000 22600 3000
 Wire Notes Line
 	20850 2350 20850 3800
+Text Label 11600 9450 3    50   ~ 0
+PG11
+Text Notes 20300 3700 0    79   ~ 0
+Buzzer\n
+Text Notes 22200 3700 0    79   ~ 0
+DS18B20
+$Comp
+L Memory_Flash:W25Q32JVSS U7
+U 1 1 5E1701C2
+P 19550 10300
+F 0 "U7" H 19550 10881 50  0000 C CNN
+F 1 "W25Q32JVSS" H 19550 10790 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 19550 10300 50  0001 C CNN
+F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 19550 10300 50  0001 C CNN
+	1    19550 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF:NRF24L01 U8
+U 1 1 5E174659
+P 20800 4950
+F 0 "U8" H 20800 5931 50  0000 C CNN
+F 1 "NRF24L01" H 20800 5840 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm" H 21000 5750 50  0001 L CIN
+F 3 "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf" H 20800 5050 50  0001 C CNN
+	1    20800 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Espressif:ESP8266EX U6
+U 1 1 5E178D3D
+P 19600 7450
+F 0 "U6" H 19600 6261 50  0000 C CNN
+F 1 "ESP8266EX" H 19600 6170 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm" H 19600 6150 50  0001 C CNN
+F 3 "http://espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf" H 19700 6150 50  0001 C CNN
+	1    19600 7450
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	500  6000 22900 6000
+$Comp
+L Connector:Micro_SD_Card J5
+U 1 1 5E199201
+P 1850 7100
+F 0 "J5" H 1800 6283 50  0000 C CNN
+F 1 "Micro_SD_Card" H 1800 6374 50  0000 C CNN
+F 2 "" H 3000 7400 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 1850 7100 50  0001 C CNN
+	1    1850 7100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 5E19E529
+P 900 6500
+F 0 "#PWR021" H 900 6250 50  0001 C CNN
+F 1 "GND" V 905 6372 50  0000 R CNN
+F 2 "" H 900 6500 50  0001 C CNN
+F 3 "" H 900 6500 50  0001 C CNN
+	1    900  6500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	900  6500 1050 6500
+Text Label 2950 6700 0    50   ~ 0
+PC9
+Wire Wire Line
+	2750 6700 2950 6700
+Text Label 2950 6800 0    50   ~ 0
+PC8
+Wire Wire Line
+	2750 6800 2950 6800
+Text Label 2950 7000 0    50   ~ 0
+PC12
+Wire Wire Line
+	2950 7000 2750 7000
+Text Label 2950 7400 0    50   ~ 0
+PC10
+Text Label 2950 7300 0    50   ~ 0
+PC11
+Wire Wire Line
+	2950 7300 2750 7300
+Wire Wire Line
+	2750 7400 2950 7400
+Text Label 2950 7200 0    50   ~ 0
+PD2
+Wire Wire Line
+	2750 7200 2950 7200
+Wire Wire Line
+	3450 7050 3450 7100
+Wire Wire Line
+	3250 6900 3250 6650
+Connection ~ 3450 7100
+Wire Wire Line
+	3450 7100 3600 7100
+Text Label 3600 7100 0    50   ~ 0
+VCC_3V3
+$Comp
+L Device:C C33
+U 1 1 5E325DE5
+P 3450 6900
+F 0 "C33" H 3565 6946 50  0000 L CNN
+F 1 "104" H 3565 6855 50  0000 L CNN
+F 2 "" H 3488 6750 50  0001 C CNN
+F 3 "~" H 3450 6900 50  0001 C CNN
+	1    3450 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 5E358C79
+P 3550 6650
+F 0 "#PWR022" H 3550 6400 50  0001 C CNN
+F 1 "GND" V 3555 6522 50  0000 R CNN
+F 2 "" H 3550 6650 50  0001 C CNN
+F 3 "" H 3550 6650 50  0001 C CNN
+	1    3550 6650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 6750 3450 6650
+Connection ~ 3450 6650
+Wire Wire Line
+	3450 6650 3550 6650
+Wire Wire Line
+	2750 7100 3450 7100
+Wire Wire Line
+	3250 6650 3450 6650
+Wire Wire Line
+	2750 6900 3250 6900
+Text Label 13100 6850 1    50   ~ 0
+PC9
+Text Label 13000 6850 1    50   ~ 0
+PC8
+Text Label 13400 6850 1    50   ~ 0
+PC12
+Text Label 14100 6850 1    50   ~ 0
+PD2
+Text Label 13200 6850 1    50   ~ 0
+PC10
+Text Label 13300 6850 1    50   ~ 0
+PC11
+$Comp
+L Connector:Micro_SD_Card J7
+U 1 1 5E488211
+P 5950 7100
+F 0 "J7" H 5900 6283 50  0000 C CNN
+F 1 "Micro_SD_Card" H 5900 6374 50  0000 C CNN
+F 2 "" H 7100 7400 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 5950 7100 50  0001 C CNN
+	1    5950 7100
+	-1   0    0    1   
+$EndComp
+Text Label 7050 6800 0    50   ~ 0
+PB14
+Wire Wire Line
+	6850 6800 7050 6800
+Text Label 7050 7000 0    50   ~ 0
+PB13
+Wire Wire Line
+	7050 7000 6850 7000
+Text Label 7050 7300 0    50   ~ 0
+PD2
+Wire Wire Line
+	7050 7300 6850 7300
+Text Label 7050 7200 0    50   ~ 0
+PB15
+Wire Wire Line
+	6850 7200 7050 7200
+Wire Wire Line
+	7550 7050 7550 7100
+Wire Wire Line
+	7350 6900 7350 6650
+Connection ~ 7550 7100
+Wire Wire Line
+	7550 7100 7700 7100
+Text Label 7700 7100 0    50   ~ 0
+VCC_3V3
+$Comp
+L Device:C C34
+U 1 1 5E48822F
+P 7550 6900
+F 0 "C34" H 7665 6946 50  0000 L CNN
+F 1 "104" H 7665 6855 50  0000 L CNN
+F 2 "" H 7588 6750 50  0001 C CNN
+F 3 "~" H 7550 6900 50  0001 C CNN
+	1    7550 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR023
+U 1 1 5E488235
+P 7650 6650
+F 0 "#PWR023" H 7650 6400 50  0001 C CNN
+F 1 "GND" V 7655 6522 50  0000 R CNN
+F 2 "" H 7650 6650 50  0001 C CNN
+F 3 "" H 7650 6650 50  0001 C CNN
+	1    7650 6650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7550 6750 7550 6650
+Connection ~ 7550 6650
+Wire Wire Line
+	7550 6650 7650 6650
+Wire Wire Line
+	6850 7100 7550 7100
+Wire Wire Line
+	7350 6650 7550 6650
+Wire Wire Line
+	6850 6900 7350 6900
+Text Label 4600 6500 2    50   ~ 0
+VCC_3V3
+Wire Wire Line
+	4600 6500 4650 6500
+$Comp
+L Device:R R20
+U 1 1 5E4BD4E4
+P 4800 6500
+F 0 "R20" V 4593 6500 50  0000 C CNN
+F 1 "5.1m" V 4684 6500 50  0000 C CNN
+F 2 "" V 4730 6500 50  0001 C CNN
+F 3 "~" H 4800 6500 50  0001 C CNN
+	1    4800 6500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 6500 5000 6500
+Wire Wire Line
+	5000 6900 4750 6900
+Wire Wire Line
+	5000 6500 5000 6900
+Text Label 4750 6900 2    50   ~ 0
+PA1
+NoConn ~ 6850 6700
+NoConn ~ 6850 7400
+Wire Notes Line
+	8200 6000 8200 8000
+Wire Notes Line
+	8200 8000 500  8000
+Wire Notes Line
+	4100 6000 4100 8000
+Connection ~ 5000 6500
+Wire Wire Line
+	5000 6500 5150 6500
+Text Label 11900 6850 1    50   ~ 0
+PB14
+Text Label 11800 6850 1    50   ~ 0
+PB13
+Text Label 12000 6850 1    50   ~ 0
+PB15
+Text Notes 3400 7850 0    79   ~ 0
+SD(SDIO)\n
+Text Notes 6650 8000 0    79   ~ 0
+SD(SPI) / Touch Button\n\n
 Wire Bus Line
 	3600 800  3600 2000
 Wire Bus Line
@@ -2380,10 +2634,4 @@ Wire Bus Line
 	1000 3350 5350 3350
 Wire Bus Line
 	1500 3850 5850 3850
-Text Label 11600 9450 3    50   ~ 0
-PG11
-Text Notes 20300 3700 0    79   ~ 0
-Buzzer\n
-Text Notes 22200 3700 0    79   ~ 0
-DS18B20
 $EndSCHEMATC
